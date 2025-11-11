@@ -1,13 +1,15 @@
 ﻿namespace Task1
 {
-    internal class First
+    internal class Program
     {
-        static int a = 10;
-        static int b = 5;
         static void Main(string[] args)
         {
-            Console.WriteLine(First.a+First.b);
+            Operator obj = new Operator();
+            obj.add();
+            obj.subtract();
+            obj.multiply();
+            obj.divide();
+            obj.OddEvenFinder(8);
         }
-
     }
 }
